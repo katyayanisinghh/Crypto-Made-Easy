@@ -1,0 +1,9 @@
+# Query: cryptoverse
+# ContextLines: 1
+
+1 result - 1 file
+
+src/Components/Navbar.jsx:
+  33          <Avatar src={icon} size="large" />
+  34:         <Typography.Title level={2} className="logo"><Link to="/">Crypto Made Easy</Link></Typography.Title>
+  35          <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined /></Button>

@@ -1,0 +1,19 @@
+# Query: total
+# ContextLines: 1
+
+15 results - 2 files
+
+src/Components/CryptoDetails.jsx:
+  37      { title: 'Aprroved Supply', value: cryptoDetails?.supply?.confirmed ? <CheckOutlined /> : <StopOutlined />, icon: <ExclamationCircleOutlined /> },
+  38:     { title: 'Total Supply', value: `$ ${cryptoDetails?.supply?.total && millify(cryptoDetails?.supply?.total)}`, icon: <ExclamationCircleOutlined /> },
+  39      { title: 'Circulating Supply', value: `$ ${cryptoDetails?.supply?.circulating && millify(cryptoDetails?.supply?.circulating)}`, icon: <ExclamationCircleOutlined /> },
+
+src/Components/Homepage.jsx:
+  22        <Row gutter={[32, 32]}>
+  23:         <Col span={12}><Statistic title="Total Cryptocurrencies" value={globalStats.total} /></Col>
+  24:         <Col span={12}><Statistic title="Total Exchanges" value={millify(globalStats.totalExchanges)} /></Col>
+  25:         <Col span={12}><Statistic title="Total Market Cap:" value={`$${millify(globalStats.totalMarketCap)}`} /></Col>
+  26:         <Col span={12}><Statistic title="Total 24h Volume" value={`$${millify(globalStats.total24hVolume)}`} /></Col>
+  27:         <Col span={12}><Statistic title="Total Cryptocurrencies" value={globalStats.total} /></Col>
+  28:         <Col span={12}><Statistic title="Total Markets" value={millify(globalStats.totalMarkets)} /></Col>
+  29        </Row>
